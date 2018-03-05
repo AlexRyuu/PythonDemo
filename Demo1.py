@@ -7,7 +7,7 @@ Python练习实例1
 
 """
 
-import datetime
+from itertools import permutations
 
 # 方法一
 print("方法一")
@@ -59,3 +59,19 @@ for i in range(123, 433):
 
 print(dict2)
 print("互不相同且无重复的三位数共有", len(dict2), "个")
+
+# 方法四
+print("")
+print("方法四")
+# 使用Python自带函数permutations
+dict3 = []
+
+for i in permutations([1, 2, 3, 4], 3):
+    dict3.append(i)
+
+print(dict3)
+print("互不相同且无重复的三位数共有", len(dict3), "个")
+
+
+
+
